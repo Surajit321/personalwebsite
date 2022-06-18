@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: rgb(236, 245, 252);
+}
+
+.banner {
+    background-image: url('./asset/banner_img.jpg');
+    height: 70vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+.about .about_group{
+    margin: 0 auto;
+    margin-top: -15rem;
+    background-color: white;
+    width: 70vw;
+    /* height: 300px; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* transition: 0.3s; */
+}
+
+.about .about_group .content{
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about .about_group .content .image img{
+    width: 9rem;
+    height: 9rem;
+    transition: all .3s;
+
+}
+
+.image img:hover{
+    border-radius: 12px;
+    box-shadow: 0 4px 15px 2px rgba(0,0,0,0.2);
+    transition: all .3s;
+    transform: scale(1.01);
+}
+
+.about .image{
+    width: 400px;
+    text-align: center;
+    padding: 0%;
+}
+
+.image .name{
+    font-size: 40px;
+    margin: 0;
+}
+
+.image .role{
+    font-size: 23px;
+    margin: 2px;
+
+}
+
+.about .text{
+  padding-left: 4rem;
+}
+
+.text table span{
+   padding-left: 7rem;
+   float: right;
+}
+
+.socials{
+    width: 100%;
+    height: 50px;
+    /* background-color: #010012; */
+    background-color: #7cb9c6;
+    text-align: center;
+}
+
+.socials svg{
+ font-size: 30px;
+ color: white;
+ margin: 0 5px;
+ margin-top: 8px;
+}
+
+.skills{
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.skills h2{
+    text-align: center;
+}
+
+.skills .allskill{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px 70px;
+    margin-top: 140px;
+}
+
+.allskill p{
+    width: 27vw;
+    margin-bottom: -3px;
+}
+
+.allskill span{
+    float: right;
+}
+
+
+
+.allskill progress{
+    width: 27vw;
+    accent-color: #7cb9c6;
+    
+}
+
+
+.allskill div{
+    margin: 0;
+    /* width: 70vw !important; */
+    /* padding: 0 0.1rem; */
+}
+
+.portfoliocontainer{
+    margin-top: 140px;
+    text-align: center;
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70vw !important;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+
+.portfoliodivs{
+    width: 310px;
+    height: 190px;
+    box-shadow: 0 4px 15px 2px rgba(0,0,0,0.2);
+    background-color: white;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.portfoliodivs:hover{
+    box-shadow: 5px 10px 15px 10px rgba(0,0,0,0.1),5px -3px 35px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+
+
+
+.experience_timeline{
+  width: 70vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.experience_timeline h2{
+    margin: 140px auto;
+    text-align: center;
+}
+
+.experience_timeline .company{
+    margin-bottom: -20px;
+}
+
+
+.experience_timeline .company::before{
+    content: '';
+    width: 4px;
+    height: 30%;
+    position: absolute;
+    background-color: red;
+    left: calc(50% + 12px);
+}
+
+.company .content{
+    background-color: white;
+    margin: 70px 0;
+    padding: 10px;
+    position: relative;
+}
+
+.content p:last-child{
+    float: right;
+    margin-top: -15px;
+}
+
+.experience_timeline .company:nth-child(even){
+    padding-right: calc(50% + 20px);
+}
+
+.experience_timeline .company:nth-child(odd){
+    padding-left: calc(50% + 50px);
+}
+
+.experience_timeline .company:last-child{
+    margin-bottom: 0;
+}
+
+.company .dot{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: blue;
+    border-radius: 50%;
+    left: calc(50% + 6.5px);
+    margin-top: 20px;
+}
+
+.content .arrow{
+position: absolute;
+height: 15px;
+width: 15px;
+background-color: white;
+transform: rotate(45deg);
+top: 20px;
+}
+
+.experience_timeline .company:nth-child(even) .arrow{
+    left: calc(98%);
+}
+.experience_timeline .company:nth-child(odd) .arrow{
+    right: calc(98%);
+}
+
+
+footer{
+    text-align: center;
+    background-color: aqua;
+    padding: 15px;
+}
+
+footer span{
+    vertical-align: middle;
+}
+
