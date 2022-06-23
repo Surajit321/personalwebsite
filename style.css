@@ -8,33 +8,39 @@ body {
 
 .banner {
     background-image: url('./asset/banner_img.jpg');
-    height: 70vh;
+    /* height: 70vh; */
+    height: 80vh;
     width: 100vw;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 
-
 .about .about_group{
     margin: 0 auto;
-    margin-top: -15rem;
+    /* margin-top: -15rem; */
+    margin-top: -25rem;
     background-color: white;
-    width: 70vw;
-    /* height: 300px; */
+    /* width: 70vw; */
+    width: 85vw;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    /* transition: 0.3s; */
 }
 
-.about .about_group .content{
-    padding: 3rem 5rem;
+.about .about_group .aboutcontent{
+    /* padding: 3rem 5rem; */
+    padding: 3rem 1rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    line-height: 1.8rem;
 }
 
-.about .about_group .content .image img{
-    width: 9rem;
-    height: 9rem;
+.about .about_group .aboutcontent .image img{
+    /* width: 9rem;
+    height: 9rem;    */
+     width: 14rem;
+    height: 14rem;
     transition: all .3s;
 
 }
@@ -47,29 +53,49 @@ body {
 }
 
 .about .image{
-    width: 400px;
+    /* width: 400px; */
     text-align: center;
     padding: 0%;
+    margin-bottom: 70px;
 }
 
 .image .name{
-    font-size: 40px;
+    font-size: 25px;
     margin: 0;
 }
 
 .image .role{
-    font-size: 23px;
+    font-size: 16px;
     margin: 2px;
 
 }
 
-.about .text{
-  padding-left: 4rem;
+.about .abouttext{
+  /* padding-left: 4rem; */
+  padding: 0 2px;
+ }
+
+.abouttext .about_heading{
+    text-align: center;
+    /* margin-top: 50px; */
+
 }
 
-.text table span{
-   padding-left: 7rem;
+.abouttext p{
+    /* padding-left: 16px; */
+    /* padding-left: 10px; */
+    text-align: center;
+}
+
+.abouttext table{
+    margin: auto;
+    width: -webkit-fill-available;
+}
+
+.abouttext table span{
+   padding-left: 3rem;
    float: right;
+   vertical-align: middle;
 }
 
 .socials{
@@ -87,6 +113,14 @@ body {
  margin-top: 8px;
 }
 
+
+/* @media only screen and (min-width: 360px) {
+
+
+} */
+
+
+
 .skills{
     width: 70vw;
     margin: 0 auto;
@@ -99,14 +133,20 @@ body {
 
 .skills .allskill{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     background-color: white;
-    padding: 30px 70px;
-    margin-top: 140px;
+    /* padding: 30px 70px; */
+    padding: 30px 30px;
+    /* margin-top: 140px; */
+    margin-top: 90px;
+    line-height: 1.8rem;
 }
 
 .allskill p{
-    width: 27vw;
+    /* width: 27vw; */
+    width: 53vw;
     margin-bottom: -3px;
 }
 
@@ -117,7 +157,8 @@ body {
 
 
 .allskill progress{
-    width: 27vw;
+    /* width: 27vw; */
+    width: 53vw;
     accent-color: #7cb9c6;
     
 }
@@ -139,12 +180,16 @@ body {
     flex-wrap: wrap;
     margin: 0 auto;
     width: 70vw !important;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     margin-top: 120px;
 }
 
 
 .portfoliodivs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 310px;
     height: 190px;
     box-shadow: 0 4px 15px 2px rgba(0,0,0,0.2);
@@ -158,32 +203,61 @@ body {
     transition: all 0.3s;
 }
 
+.hrelement{
+    width: 80px;
+    border: 2px solid blue;
+}
+
+.hideonhover{
+    display: none;
+}
+
+.svgstyle{
+    font-size: 35px;
+    stroke: blue;
+}
 
 
-
-.experience_timeline{
-  width: 70vw;
+.timeline{
+  /* width: 70vw; */
+  width: 80vw;
   margin: 0 auto;
   position: relative;
 }
 
-.experience_timeline h2{
+.timeline h2{
     margin: 140px auto;
     text-align: center;
 }
 
-.experience_timeline .company{
+/* .experience_timeline  */
+.company{
     margin-bottom: -20px;
 }
 
 
-.experience_timeline .company::before{
+/* .experience_timeline */
+ .timeline_container::before{
     content: '';
     width: 4px;
-    height: 30%;
+    /* height: 30%; */
+    height: 71%;
     position: absolute;
     background-color: red;
-    left: calc(50% + 12px);
+    /* left: calc(50% + 12px); */
+    left: -22px;
+}
+
+
+.education_timeline .timeline_container::before{
+    content: '';
+    width: 4px;
+    /* height: 30%; */
+    height: 63%;
+    position: absolute;
+    background-color: red;
+    /* left: calc(50% + 12px); */
+    left: -22px;
 }
 
 .company .content{
@@ -191,22 +265,26 @@ body {
     margin: 70px 0;
     padding: 10px;
     position: relative;
+    height: 103px;
 }
 
 .content p:last-child{
     float: right;
-    margin-top: -15px;
+    margin-top: -2px;
 }
 
-.experience_timeline .company:nth-child(even){
+/* .experience_timeline */
+ /* .company:nth-child(even){
     padding-right: calc(50% + 20px);
-}
+} */
 
-.experience_timeline .company:nth-child(odd){
+/* .experience_timeline */
+ /* .company:nth-child(odd){
     padding-left: calc(50% + 50px);
-}
+} */
 
-.experience_timeline .company:last-child{
+/* .experience_timeline  */
+.company:last-child{
     margin-bottom: 0;
 }
 
@@ -216,7 +294,8 @@ body {
     width: 15px;
     background-color: blue;
     border-radius: 50%;
-    left: calc(50% + 6.5px);
+    /* left: calc(50% + 6.5px); */
+    left: -27px;
     margin-top: 20px;
 }
 
@@ -229,10 +308,13 @@ transform: rotate(45deg);
 top: 20px;
 }
 
-.experience_timeline .company:nth-child(even) .arrow{
-    left: calc(98%);
+/* .experience_timeline  */
+.company:nth-child(even) .arrow{
+    /* left: calc(98%); */
+    left: -10px;
 }
-.experience_timeline .company:nth-child(odd) .arrow{
+/* .experience_timeline  */
+.company:nth-child(odd) .arrow{
     right: calc(98%);
 }
 
@@ -247,3 +329,299 @@ footer span{
     vertical-align: middle;
 }
 
+
+
+@media screen and (min-width: 480px ) {
+    .banner{
+        background-size: cover;
+        height: 60vh;
+    }
+
+    .about_group{
+        width: 90vw;
+    }
+    .about_group .aboutcontent{
+        flex-wrap: wrap;
+    }
+
+    .aboutcontent .abouttext{
+        font-size: 17px;
+        padding: 0 2rem;
+    }
+    .aboutcontent .image{
+        margin-bottom: 50px;
+    }
+    .image img{
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .timeline{
+        width: 76vw;
+    }
+}
+
+@media screen and (min-width: 600px ){
+    .about_group .aboutcontent{
+        padding: 3rem;
+    }
+
+    .timeline{
+        width: 70vw;
+    }
+} 
+
+
+
+@media screen and (min-width: 768px ){
+
+    .banner {
+        background-size: cover;
+        height: 40vh;
+    }
+
+    .about .about_group {
+          margin-top: -12rem;
+    }
+
+    .aboutcontent .image {
+        /* margin-bottom: 50px; */
+        margin: auto 0;
+    }
+
+   .aboutcontent .abouttext{
+    width: 290px;
+    padding: 0;
+
+   }
+
+   .abouttext .about_heading{
+    text-align: left;
+   }
+   
+   .abouttext p{
+    text-align: left;
+   }
+
+   .about .about_group .aboutcontent .image img{
+    width: 10rem;
+    height: 10rem;
+   }
+
+   .about .about_group .aboutcontent{
+    padding: 1rem 0;
+   }
+
+   /* .image .name{
+    font-size: 35px;
+   }
+
+   .image .role{
+    font-size: 20px;
+   } */
+
+   .abouttext table{
+    font-size: 16px;
+   }
+
+   .abouttext p{
+    font-size: 16px;
+   }
+
+   /* .aboutcontent .image{
+
+   } */
+
+   .portfolio{
+    width: 82vw !important;
+    justify-content: space-between;
+   }
+
+   .portfoliodivs{
+    width: 49%;
+   }
+
+   .timeline{
+    width: 90vw;
+   }
+   .company:nth-child(even){
+    padding-right: calc(50% + 20px);
+}
+
+.company:nth-child(odd){
+    padding-left: calc(50% + 50px);
+} 
+
+.timeline_container::before{
+    left: calc(50% + 12px);
+}
+
+.education_timeline .timeline_container::before{
+    left: calc(50% + 12px);
+}
+
+.company .dot{
+    left: calc(50% + 6.5px);
+}
+
+.company:nth-child(even) .arrow{
+    left: calc(98%);
+}
+} 
+
+@media screen and (min-width: 1000px ){
+
+    .banner {
+        background-size: 100% 100%;
+        height: 60vh;
+    }
+
+    .aboutcontent .abouttext {
+       width: 42vw;
+    }
+
+    .aboutcontent .image{
+        width: 20vw;
+    }
+    .about .about_group .aboutcontent .image img{
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .image .name {
+        font-size: 40px;
+    }
+
+    .image .role {
+        font-size: 24px;
+    }
+
+    .about .about_group .aboutcontent{
+        padding: 4rem 4rem;
+    }
+    .abouttext .about_heading{
+        font-size: 35px;
+    }
+    .abouttext p {
+        font-size: 24px;
+    }
+    .abouttext table{
+        font-size: 24px;
+    }
+
+
+    .skills .allskill {
+        justify-content: space-between;
+    }
+    .allskill p {
+        width: 30vw;
+    }
+
+    .allskill progress {
+        width: 30vw;
+    }
+
+    .portfolio{
+        width: 75vw !important;
+    }
+
+    .portfoliodivs{
+        width: 32%;
+    }
+
+    .company .content {
+        height: 25vh;
+    }
+
+    .content p:last-child {
+        margin-top: 18px;
+    }
+
+    .timeline_container::before{
+        height: 77%;
+    }
+
+    .education_timeline .timeline_container::before{
+        height: 67%;
+    }
+}
+
+@media screen and (min-width: 1360px ){
+    .banner {
+        background-size: 100% 100%;
+        height: 70vh;
+    }
+
+    .about .about_group {
+        margin-top: -14rem;
+        height: 347px;
+        width: 70vw;
+    }
+
+    .about .about_group .aboutcontent {
+        padding: 2rem;
+        line-height: 1.8rem;
+    }
+
+    .about .about_group .aboutcontent .image {
+        margin: auto 0;
+    }
+
+    .about .about_group .aboutcontent .image img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .image .name {
+        font-size: 25px;
+    }
+
+    .image .role {
+        font-size: 14px;
+    }
+
+    .aboutcontent .abouttext {
+        width: 34vw;
+    }
+
+    .abouttext .about_heading {
+        font-size: 25px;
+    }
+
+    .abouttext p {
+        font-size: 16px;
+    }
+    .abouttext table {
+        font-size: 16px;
+    }
+
+    .skills .allskill {
+        padding: 30px 50px;
+    }
+
+    .portfolio{
+        width: 69.5vw !important;
+    }
+
+    .portfoliodivs{width: 32.5%;}
+
+    .timeline {
+        width: 70vw;
+    }
+
+    .company .content {
+        height: 89px;
+    }
+
+    .content p:last-child {
+        margin-top: -9px;
+    }
+
+    .timeline_container::before {
+        height: 72%;
+    }
+
+    .education_timeline .timeline_container::before {
+        height: 62%;
+    }
+}
