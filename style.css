@@ -102,7 +102,7 @@ body {
     width: 100%;
     height: 50px;
     /* background-color: #010012; */
-    background-color: #7cb9c6;
+    background-color: #3dcb99;
     text-align: center;
 }
 
@@ -159,7 +159,7 @@ body {
 .allskill progress{
     /* width: 27vw; */
     width: 53vw;
-    accent-color: #7cb9c6;
+    accent-color: #3dcb99;
     
 }
 
@@ -205,7 +205,7 @@ body {
 
 .hrelement{
     width: 80px;
-    border: 2px solid blue;
+    border: 2px solid #3dcb99;
 }
 
 .hideonhover{
@@ -214,7 +214,7 @@ body {
 
 .svgstyle{
     font-size: 35px;
-    stroke: blue;
+    stroke: #3dcb99;
 }
 
 
@@ -243,7 +243,7 @@ body {
     /* height: 30%; */
     height: 71%;
     position: absolute;
-    background-color: red;
+    background-color: #FFFFFF;
     /* left: calc(50% + 12px); */
     left: -22px;
 }
@@ -255,7 +255,7 @@ body {
     /* height: 30%; */
     height: 63%;
     position: absolute;
-    background-color: red;
+    background-color: #FFFFFF;
     /* left: calc(50% + 12px); */
     left: -22px;
 }
@@ -292,7 +292,7 @@ body {
     position: absolute;
     height: 15px;
     width: 15px;
-    background-color: blue;
+    background-color: #3dcb99;
     border-radius: 50%;
     /* left: calc(50% + 6.5px); */
     left: -27px;
@@ -321,12 +321,14 @@ top: 20px;
 
 footer{
     text-align: center;
-    background-color: aqua;
+    background-color: #3dcb99;
+    color: #FFFFFF;
     padding: 15px;
 }
 
 footer span{
     vertical-align: middle;
+    color: #FFFFFF;
 }
 
 
